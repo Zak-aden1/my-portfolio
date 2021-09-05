@@ -1,0 +1,53 @@
+.about_two {
+  background-color: #333647;
+  overflow: auto;
+  width: 100vw;
+}
+.about_two .skills_container {
+  min-height: 10em;
+  text-align: center;
+  align-content: center;
+}
+.about_two .skills_container h1 {
+  font-size: 56px;
+  font-weight: 500;
+}
+.about_two .tech {
+  margin: 15vh auto;
+  max-width: 75%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  border-left: 2px solid orange;
+  border-right: 2px solid orange;
+}
+.about_two .tech div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+  transition: 0.8s ease-out;
+}
+.about_two .tech div:hover, .about_two .tech div:hover div {
+  transition: 0.8s ease-out;
+  color: blue;
+  opacity: 1;
+}
+.about_two .tech div .fab, .about_two .tech div .fas {
+  margin-top: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+.about_two .tech div div {
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 25px;
+  padding: 0;
+}
+.about_two .tech div div:hover {
+  color: orange;
+  opacity: 1;
+}

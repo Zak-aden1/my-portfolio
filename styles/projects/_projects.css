@@ -1,0 +1,80 @@
+.projects {
+  width: 100vw;
+}
+.projects .projects_title {
+  text-align: center;
+}
+.projects .projects_title h1 {
+  font-size: 56px;
+  font-weight: 500;
+}
+.projects .projects_buttons ul {
+  list-style: none;
+  margin-bottom: 2em;
+  border-bottom: 1px solid orange;
+  width: 250px;
+  margin: 15px auto;
+}
+.projects .projects_buttons ul li {
+  display: inline;
+  margin: 0 4px;
+}
+.projects .projects_buttons ul li button {
+  width: 90px;
+  color: white;
+  font-weight: 300;
+  background: none;
+  border: 1px solid orange;
+  border-bottom: 0;
+  border-radius: 4px 4px 0 0;
+  padding: 8px 0;
+  cursor: pointer;
+}
+.projects .projects_buttons ul li button:hover {
+  background: white;
+  color: orange;
+  font-weight: 500;
+}
+.projects .project_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.projects .project_container .project_one {
+  width: 300px;
+  background-color: #282a39;
+}
+.projects .project_container .project_one .img {
+  width: 100%;
+  height: 50%;
+}
+.projects .project_container .project_one .img img {
+  width: 100%;
+}
+.projects .project_container .project_one h4, .projects .project_container .project_one p {
+  text-align: center;
+}
+.projects .project_container .project_one h4 {
+  width: 75%;
+  margin: 15px auto;
+  border-bottom: 2px solid pink;
+}
+.projects .project_container .project_one .project_icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.projects .project_container .project_one .project_icons i {
+  font-size: 36px;
+  margin: 10px 20px;
+}
+.projects .project_container .project_one .project_icons i:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.active {
+  background: white;
+  color: orange;
+  font-weight: 500;
+}

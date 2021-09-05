@@ -1,0 +1,75 @@
+.about_two {
+    background-color: #333647;
+    overflow: auto;
+    width: 100vw;
+
+    .skills_container {
+        min-height: 10em;
+        text-align: center;
+        align-content: center;
+        h1 {
+            font-size: 56px;
+            // text-align: center;
+            font-weight: 500;
+        }
+    }
+
+        .tech {
+            // display: flex;
+            // border: 2px solid red;
+            margin: 15vh auto;
+            max-width: 75%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            // grid-template-rows: repeat(3, 1fr);
+            justify-items: center;
+            align-items: center;
+            // border: 2px solid pink;
+            border-left: 2px solid orange;
+            border-right: 2px solid orange;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                margin: 0 20px;
+                border-radius: 50%;
+                font-size: 40px;
+                color: white;
+                // opacity: 0;
+                // transform: translateY(150px);
+                transition: 0.8s ease-out;
+
+                &:hover, &:hover div {
+                    transition: 0.8s ease-out;
+                    color: blue;
+                    opacity: 1;
+                }
+                
+                .fab, .fas {
+                    margin-top: 30px;
+                    font-size: 40px;
+                    text-align: center;
+                }
+
+                div {
+                    opacity: 0;
+                    transition: 0.5s;
+                    font-size: 25px;
+                    padding: 0;
+
+                    &:hover {
+                        color: orange;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+}
+
+
+// @media screen and (max-width: 900px) {
+//     .tech {
+//         grid-template-columns: repeat(3, 1fr);
+//     }
+// }

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./_media-queries.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Zak's Portfolio</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h6 class="header__h6">Zak Aden <span style='color: orange;'>.</span></h6>
+        <nav class="nav">
+            <ul class="header__ul">
+                <li> <a href="#">Home</a> </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+        </nav>
+        <!-- <a href="#about"><button class="animate__tada">Contact</button></a> -->
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="zak">
+                    <h1>Hello! I<span style='color: orange;' >'</span>m <span style='color: orange;' >Zak Aden</span></h1>
+                    <h2>Junior Software Developer</h2>
+                    <div class="button">
+                        <button class="animate_animated">About Me</button>
+                    </div>
+                </div>
+                <div>
+                    <center>
+                        <!-- <img src="./images/circle-portfolio.png" alt=""> -->
+                    </center>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- About -->
+    <section class="about_one">
+        <div class="about_container">
+            <div class="greeting_wrapper">
+                <h1>About me</h1>
+            </div>
+
+            <div class="intro_wrapper">
+                <div class="nav_wrapper">
+                    <div class="dot_wrapper">
+                        <div id="dot_one" class="browser_dot"></div>
+                        <div id="dot_two"  class="browser_dot"></div>
+                        <div id="dot_three"  class="browser_dot"></div>
+                    </div>
+                    <ul id="intro_navigation">
+                        <li><a href="#">SKILLS</a></li>
+                        <li><a href="#">Prject</a></li>
+                    </ul>
+                </div>
+
+                <div class="left_column">
+                    <img id="pic" src="./images/portfolio.jpg" alt="">
+                </div>
+                <div class="right_column">
+
+                    <div id="preview_shadow">
+                        <div id="preview">
+                            <div id="corner_tl" class="corner"></div>
+                            <div id="corner_tr" class="corner"></div>
+                            <h3><strong>Hey, I'm Zak!</strong></h3>
+                            <p></p>
+                            <p>I Currrenlty finished a 12 week intensive Bootcam (nology) in which i gained a deep understanding of fundamental software development concepts and best practices by building applications at a professional level using agile methodology.</p>
+                            <p>Learning to code has been a difficult and arduous journey, yet a rewarding one. Being able to immerse myself in projects that push my problem-solving, organisational and analytical skills whilst partaking in the change that it brings.</p>
+                            <p>I aspire to be a developer so that I may develop myself and help the world one line of code at a time.</p>
+                            <!-- <p>I'm a junior Software Developer with a deep understanding of fundamental software development concepts and best practices by building applications at a professional level using agile methodology.</p> -->
+                            <div id="corner_bl" class="corner"></div>
+                            <div id="corner_br" class="corner"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="about_two">
+        <div class="skills_container">
+            <h1>Skills</h1>
+        </div>
+
+        <div class="tech">
+            <div>
+                <i class="fab fa-html5"></i>
+                <div>HTML</div>
+            </div>
+            <div>
+                <i class="fab fa-react"></i>
+                <div>REACT</div>
+            </div>
+            <div>
+                <i class="fab fa-css3-alt"></i>
+                <div>CSS3</div>
+            </div>
+            <div>
+                <i class="fab fa-sass"></i>
+                <div>SCSS</div>
+            </div>
+            <div>
+                <i class="fab fa-js"></i>
+                <div>Javascript</div>
+            </div>
+            <div>
+                <i class="fab fa-git"></i>
+                <div>Git</div>
+            </div>
+            <div>
+                <i class="fab fa-github"></i>
+                <div>Github</div>
+            </div>
+            <div>
+                <i class="fas fa-database"></i>
+                <div>Database</div>
+            </div>
+            <div>
+                <i class="fab fa-npm"></i>
+                <div>npm</div>
+            </div>
+            <div>
+                <i class="fab fa-java"></i>
+                <div>Java</div>
+            </div>
+            <div>
+                <i class="fas fab fa-fire"></i>
+                <div>Firebase</div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+        <div class="projects_title">
+            <h1>My Projects <span style='color: orange;'>.</span></h1>
+        </div>
+
+        <div class="projects_buttons">
+                <ul>
+                    <li>
+                        <button class="tab" data-content="#one">Javascript</button>
+                    <!-- data-content="" >>> relates to event.currentTarget.dataset in JS -->
+                    </li>
+                    <li>
+                        <button class="tab" data-content="#two">React</button>
+                    </li>
+            </ul>
+        </div>
+
+        <div class="project_container">
+        <div class="project_one animate_animated">
+                    <div class="img">
+                        <img src="./images/calculator.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4>Calculator</h4>
+                        <p>Calculator which performs any calculations. End to End testing implemented using cypress.</p>
+                        <p>JavaScript | Cypress | SASS</p>
+                        <div class="project_icons">
+                            <i class="fas fa-rocket"></i>
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </div>
+        </div>
+        <div class="project_one animate_animated">
+                    <div class="img">
+                        <img src="./images/tic-tac-toe.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4>Tic Tac Toe</h4>
+                        <p>A tic tac toe game built with vanilla JavaScript.</p>
+                        <p>JavaScript | SASS</p>
+                        <div class="project_icons">
+                            <i class="fas fa-rocket"></i>
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </div>
+        </div>
+        <div class="project_one animate_animated">
+                    <div class="img">
+                        <img src="./images/morse-code.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4>Morse Code</h4>
+                        <p>A Morse Code translator built with vanilla JavaScript</p>
+                        <p>JavaScript | SASS</p>
+                        <div class="project_icons">
+                            <i class="fas fa-rocket"></i>
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact">
+        <div class="contact_container">
+            <h1>Let's Talk <span style='color: orange;'>.</span></h1>
+        </div>
+
+        <form action="https://formspree.io/f/xzbykljr" method="post" id="contact_form">
+            <label for="name"> Name</label>
+            <input type="text" class="input_field" name="name">
+
+            <label for="email"> Email</label>
+            <input type="text" class="input_field" name="email">
+
+            <label>Message</label>
+            <textarea name="message" class="input_field"></textarea>
+
+            <!-- <input id="submit_btn" type="submit" value="Send"> -->
+            <button id="submit_btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">Up</a>
+                <!-- <a href="#">dad</a> -->
+            </li>
+        </ul>
+        <p class="copywright">Zak Aden @2021</p>
+    </section>
+    
+    <!-- Javascript -->
+    <div id="bg"></div>
+    <script src="./js/styles.js"></script>
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/custom.js"></script>
+</body>
+</html>

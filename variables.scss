@@ -1,0 +1,41 @@
+$prmSpecialColor: orange;
+$prmColor: white;
+
+$BackgroundColor: #333647;
+$BackgroundColorSecond: #282a39;
+$borderColor: #c1c1c1;
+$buttonColor: black;
+
+
+@mixin button {
+    // margin: 0 20px;
+    padding: 9px 25px;
+    background-color: orange;
+    font-size: 19px;
+    font-family: 'Poppins';
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        background-color: white;
+        color: orange;
+    }
+}
+
+@mixin typingAnimation {
+     overflow: hidden;
+     /* Ensures the content is not revealed until the animation */
+     border-right: .15em solid orange;
+     /* The typwriter cursor */
+     white-space: nowrap;
+     /* Keeps the content on a single line */
+     margin: 0 auto;
+     /* Gives that scrolling effect as the typing happens */
+     letter-spacing: .15em;
+     /* Adjust as needed */
+     animation: typing 3.5s steps(40, end),
+     blink-caret .75s step-end infinite;
+     }
