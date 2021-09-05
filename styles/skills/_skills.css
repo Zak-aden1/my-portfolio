@@ -38,7 +38,7 @@
 }
 .about_two .tech div .fab, .about_two .tech div .fas {
   margin-top: 30px;
-  font-size: 40px;
+  font-size: clamp(20px, 40px);
   text-align: center;
 }
 .about_two .tech div div {

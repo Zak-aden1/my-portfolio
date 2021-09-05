@@ -18,7 +18,7 @@
   background-color: #333647;
   border: 1px solid pink;
   border-radius: 5px 5px 0 0;
-  width: 85vw;
+  max-width: 85%;
   margin: 15px auto;
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -96,7 +96,7 @@
   display: block;
   margin: 30px auto;
   height: 500px;
-  width: 400px;
+  max-width: 400px;
   object-fit: cover;
   border: 2px solid black;
 }
@@ -109,13 +109,13 @@
 }
 .about_one .intro_wrapper .right_column #preview_shadow {
   background-color: #202436;
-  width: 500px;
+  max-width: 500px;
   height: 350px;
   padding-left: 30px;
   padding-top: 30px;
 }
 .about_one .intro_wrapper .right_column #preview {
-  width: 500px;
+  max-width: 500px;
   border: 2px solid darkblue;
   background-color: #282a39;
   opacity: 0.8;
@@ -187,7 +187,7 @@
 }
 .about_two .tech div .fab, .about_two .tech div .fas {
   margin-top: 30px;
-  font-size: 40px;
+  font-size: clamp(20px, 40px);
   text-align: center;
 }
 .about_two .tech div div {
@@ -277,7 +277,7 @@
   list-style: none;
   margin-bottom: 2em;
   border-bottom: 1px solid orange;
-  width: 250px;
+  width: 350px;
   margin: 15px auto;
 }
 .projects .projects_buttons ul li {
@@ -287,7 +287,7 @@
 .projects .projects_buttons ul li button {
   width: 90px;
   color: white;
-  font-weight: 300;
+  font-weight: 100;
   background: none;
   border: 1px solid orange;
   border-bottom: 0;
@@ -308,6 +308,7 @@
 }
 .projects .project_container .project_one {
   width: 300px;
+  margin-bottom: 50px;
   background-color: #282a39;
 }
 .projects .project_container .project_one .img {
@@ -336,6 +337,9 @@
 .projects .project_container .project_one .project_icons i:hover {
   color: orange;
   cursor: pointer;
+}
+.projects .project_container.show {
+  display: initial !important;
 }
 
 .active {

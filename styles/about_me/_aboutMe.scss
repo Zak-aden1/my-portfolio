@@ -22,7 +22,7 @@
         background-color: #333647;
         border: 1px solid pink;
         border-radius: 5px 5px 0 0;
-        width: 85vw;
+        max-width: 85%;
         margin: 15px auto;
 
 
@@ -119,7 +119,7 @@
                 display: block;
                 margin: 30px auto;
                 height: 500px;
-                width: 400px;
+                max-width: 400px;
                 object-fit: cover;
                 border: 2px solid black
             }
@@ -134,14 +134,14 @@
 
             #preview_shadow {
                 background-color: #202436;
-                width: 500px;
+                max-width: 500px;
                 height: 350px;
                 padding-left: 30px;
                 padding-top: 30px;
             }
 
             #preview {
-                width: 500px;
+                max-width: 500px;
                 border: 2px solid darkblue;
                 background-color: #282a39;
                 opacity: 0.8;

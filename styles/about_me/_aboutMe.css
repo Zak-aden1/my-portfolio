@@ -17,7 +17,7 @@
   background-color: #333647;
   border: 1px solid pink;
   border-radius: 5px 5px 0 0;
-  width: 85vw;
+  max-width: 85%;
   margin: 15px auto;
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -95,7 +95,7 @@
   display: block;
   margin: 30px auto;
   height: 500px;
-  width: 400px;
+  max-width: 400px;
   object-fit: cover;
   border: 2px solid black;
 }
@@ -108,13 +108,13 @@
 }
 .about_one .intro_wrapper .right_column #preview_shadow {
   background-color: #202436;
-  width: 500px;
+  max-width: 500px;
   height: 350px;
   padding-left: 30px;
   padding-top: 30px;
 }
 .about_one .intro_wrapper .right_column #preview {
-  width: 500px;
+  max-width: 500px;
   border: 2px solid darkblue;
   background-color: #282a39;
   opacity: 0.8;
