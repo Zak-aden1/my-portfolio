@@ -43,6 +43,12 @@
 }
 .footer .list li a:hover {
   opacity: 1;
+  color: orange;
+  cursor: pointer;
+}
+.footer .list li a i:hover {
+  color: orange;
+  cursor: pointer;
 }
 .footer .copywright {
   margin-top: 15px;

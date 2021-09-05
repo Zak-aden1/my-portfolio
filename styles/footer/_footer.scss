@@ -47,6 +47,15 @@
 
                 &:hover {
                     opacity: 1;
+                    color: orange;
+                    cursor: pointer;
+                }
+
+                i {
+                    &:hover {
+                        color: orange;
+                        cursor: pointer;
+                    }
                 }
             }
         }
