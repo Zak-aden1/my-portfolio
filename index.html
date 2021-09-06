@@ -16,13 +16,14 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="animate__animated animate__slideInDown animate__slow">
-        <h6 class="header__h6">Zak Aden <span style='color: orange;'>.</span></h6>
+    <header id="home" class="animate__animated animate__slideInDown animate__slow">
+        <h6 class="header__h6"><span style='color: orange;'>Zak</span> Aden <span style='color: orange;'>.</span></h6>
         <nav class="nav">
             <ul class="header__ul">
-                <li> <a href="#">Home</a> </li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Project</a></li>
+                <li> <a href="#home">Home</a> </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <!-- <a href="#about"><button class="animate__tada">Contact</button></a> -->
@@ -33,10 +34,12 @@
         <div class="container">
             <div class="row">
                 <div class="zak">
-                    <h1>Hello! I<span style='color: orange;' >'</span>m <span style='color: orange;' >Zak Aden</span></h1>
-                    <h2>Junior Software Developer</h2>
+                    <h1>Hello! I<span style='color: orange;' >'</span>m <span style='color: orange;' >Zak Aden,</span></h1>
+                    <h1>Junior Software Developer</h1>
                     <div class="button">
+                        <a href="#about">
                         <button class="animate_animated">About Me</button>
+                        </a>
                     </div>
                 </div>
                 <div>
@@ -50,7 +53,7 @@
 
     <!-- About -->
     <section class="about_one">
-        <div class="about_container">
+        <div id="about" class="about_container">
             <div class="greeting_wrapper">
                 <h1>About me <span style='color: orange;' >.</span></h1>
             </div>
@@ -78,10 +81,15 @@
                             <div id="corner_tl" class="corner"></div>
                             <div id="corner_tr" class="corner"></div>
                             <h3><strong>Hey, I'm Zak!</strong></h3>
-                            <p></p>
-                            <p>I Currrenlty finished a 12 week intensive Bootcam (nology) in which i gained a deep understanding of fundamental software development concepts and best practices by building applications at a professional level using agile methodology.</p>
+                            <p>I am a junior software developer with a passion for problem solving and intuitive software. </p>
+                            <p>I am currently based in Birmingham and on the lookout for a challenging and rewarding tech role.</p>
+
+                            <a href="#">
+                                <button>CV</button>
+                            </a>
+                            <!-- <p>I Currrenlty finished a 12 week intensive Bootcam (nology) in which i gained a deep understanding of fundamental software development concepts and best practices by building applications at a professional level using agile methodology.</p>
                             <p>Learning to code has been a difficult and arduous journey, yet a rewarding one. Being able to immerse myself in projects that push my problem-solving, organisational and analytical skills whilst partaking in the change that it brings.</p>
-                            <p>I aspire to be a developer so that I may develop myself and help the world one line of code at a time.</p>
+                            <p>I aspire to be a developer so that I may develop myself and help the world one line of code at a time.</p> -->
                             <!-- <p>I'm a junior Software Developer with a deep understanding of fundamental software development concepts and best practices by building applications at a professional level using agile methodology.</p> -->
                             <div id="corner_bl" class="corner"></div>
                             <div id="corner_br" class="corner"></div>
@@ -94,7 +102,7 @@
     </section>
 
     <!-- SKILLS -->
-    <section class="about_two">
+    <section id="skills" class="about_two">
         <div class="skills_container">
             <h1>Skills <span style='color: orange;' >.</span></h1>
         </div>
@@ -151,7 +159,7 @@
     </section>
 
     <!-- Projects -->
-    <section class="projects">
+    <section id="projects" class="projects">
         <div class="projects_title">
             <h1>My Projects <span style='color: orange;'>.</span></h1>
         </div>
@@ -182,7 +190,7 @@
                         <p>Calculator which performs any calculations. End to End testing implemented using cypress.</p>
                         <p>JavaScript | Cypress | SASS</p>
                         <div class="project_icons">
-                            <a arget="_blank" href="https://zak-aden1.github.io/Calculator/"><i class="fas fa-rocket"></i></a>
+                            <a target="_blank" href="https://zak-aden1.github.io/Calculator/"><i class="fas fa-rocket"></i></a>
                             <a target="_blank" href="https://github.com/Zak-aden1/Calculator"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -196,7 +204,7 @@
                         <p>A tic tac toe game built with vanilla JavaScript. styling done with SASS.</p>
                         <p>JavaScript | SASS</p>
                         <div class="project_icons">
-                            <a arget="_blank" href="https://zak-aden1.github.io/tic-tac-toe/"><i class="fas fa-rocket"></i></a>
+                            <a target="_blank" href="https://zak-aden1.github.io/tic-tac-toe/"><i class="fas fa-rocket"></i></a>
                             <a target="_blank" href="https://github.com/Zak-aden1/tic-tac-toe"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -211,7 +219,7 @@
                         <p>A Morse Code translator which can translate from english to morse code and vice versa.</p>
                         <p>JavaScript | SASS</p>
                         <div class="project_icons">
-                            <a arget="_blank" href="https://zak-aden1.github.io/morse-code-translator/"><i class="fas fa-rocket"></i></a>
+                            <a target="_blank" href="https://zak-aden1.github.io/morse-code-translator/"><i class="fas fa-rocket"></i></a>
                             <a target="_blank" href="https://github.com/Zak-aden1/morse-code-translator"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -226,7 +234,7 @@
                         <p>A React web app which Allows you to check the definition of any word. Works with four different languages</p>
                         <p>JavaScript | SASS</p>
                         <div class="project_icons">
-                            <a arget="_blank" href="https://zak-aden1.github.io/word-hunt/"><i class="fas fa-rocket"></i></a>
+                            <a target="_blank" href="https://zak-aden1.github.io/word-hunt/"><i class="fas fa-rocket"></i></a>
                             <a target="_blank" href="https://github.com/Zak-aden1/word-hunt"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -241,7 +249,7 @@
                         <p>A React app which you can search and filter through beers. you can also login and favourite any drink which will show in your favourites page.</p>
                         <p>JavaScript | React | Api | Firebase | Material UI</p>
                         <div class="project_icons">
-                            <a arget="_blank" href="https://punk-api-auth.web.app"><i class="fas fa-rocket"></i></a>
+                            <a target="_blank" href="https://punk-api-auth.web.app"><i class="fas fa-rocket"></i></a>
                             <a target="_blank" href="https://github.com/Zak-aden1/punk-api-challenge"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -256,7 +264,7 @@
                         <p>A Web App built for the purpose of students and teachers being able to see their schedule, courses and curriculum.</p>
                         <p>React | Firebase | SASS | Pair Programming</p>
                         <div class="project_icons">
-                            <a arget="_blank" href="https://nology-login.web.app/"><i class="fas fa-rocket"></i></a>
+                            <a target="_blank" href="https://nology-login.web.app/"><i class="fas fa-rocket"></i></a>
                             <a target="_blank" href="https://github.com/nology-tech/nologer"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -271,7 +279,7 @@
                         <p>A full stack Crud Web App which allows you to add or delete custom notes.</p>
                         <p>React | Material UI | Java | MySql | Postman</p>
                         <div class="project_icons">
-                            <a arget="_blank" href="https://zak-aden1.github.io/note-project/"><i class="fas fa-rocket"></i></a>
+                            <a target="_blank" href="https://zak-aden1.github.io/note-project/"><i class="fas fa-rocket"></i></a>
                             <a target="_blank" href="https://github.com/Zak-aden1/note-project"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -281,7 +289,7 @@
     </section>
 
     <!-- Contact Form -->
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="contact_container">
             <h1>Let's Talk <span style='color: orange;'>.</span></h1>
         </div>
@@ -304,14 +312,14 @@
     <!-- Footer -->
     <section class="footer">
         <div class="social">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/Zak-aden1"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/zak-aden-376777216/"><i class="fab fa-linkedin"></i></a>
         </div>
 
         <ul class="list">
             <li>
-                <a href="#">Back to Top</a>
-                <!-- <a href="#">dad</a> -->
+                <!-- <a href="#home">Back to Top</a> -->
+                <a href="#home"> <i class="fas fa-angle-up"></i></a>
             </li>
         </ul>
         <p class="copywright">Zak Aden @2021</p>

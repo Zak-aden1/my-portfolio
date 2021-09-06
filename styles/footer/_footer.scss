@@ -24,6 +24,7 @@
 
             &:hover {
                 opacity: 1;
+                color: orange;
             }
         }
     }
@@ -52,9 +53,12 @@
                 }
 
                 i {
+                    font-size: 40px;
+                    transition: 0.3s;
                     &:hover {
                         color: orange;
                         cursor: pointer;
+                        transform: translate(0, -10px);
                     }
                 }
             }

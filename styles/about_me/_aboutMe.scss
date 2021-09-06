@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .about_one {
     background-color: #282a39;
     overflow: auto;
@@ -131,6 +133,10 @@
 
             padding-top: 100px;
             padding-bottom: 100px;
+
+            button {
+                @include button;
+            }
 
             #preview_shadow {
                 background-color: #202436;

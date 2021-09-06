@@ -22,6 +22,7 @@
 }
 .footer .social a:hover {
   opacity: 1;
+  color: orange;
 }
 .footer .list {
   margin-top: 0;
@@ -46,9 +47,14 @@
   color: orange;
   cursor: pointer;
 }
+.footer .list li a i {
+  font-size: 40px;
+  transition: 0.3s;
+}
 .footer .list li a i:hover {
   color: orange;
   cursor: pointer;
+  transform: translate(0, -10px);
 }
 .footer .copywright {
   margin-top: 15px;

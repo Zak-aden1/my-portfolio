@@ -9,6 +9,10 @@
 @import './styles/contact/contact';
 @import './styles/footer/footer';
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #333647;
     color: white;
@@ -97,7 +101,7 @@ header {
             h1 {
                 font-size: 65px;
                 font-weight: 800;
-                @include typingAnimation;
+                // @include typingAnimation;
                 margin: 8px 0;
             }
 
