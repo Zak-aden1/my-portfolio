@@ -347,6 +347,9 @@
   display: flex;
   justify-content: space-evenly;
 }
+.projects .project_container .project_one .project_icons a {
+  color: inherit;
+}
 .projects .project_container .project_one .project_icons i {
   font-size: 36px;
   font-size: 24px;

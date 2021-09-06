@@ -91,6 +91,10 @@
                 display: flex;
                 justify-content: space-evenly;
 
+                a {
+                    color: inherit;
+                }
+
                 i {
                     font-size: 36px;
                     // margin: 10px 20px;
