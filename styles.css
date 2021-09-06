@@ -201,6 +201,14 @@
   opacity: 1;
 }
 
+@media screen and (max-width: 1200px) {
+  .project_container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .project_container .project_one {
+    margin-bottom: 50px;
+  }
+}
 @media screen and (max-width: 940px) {
   .container .row {
     display: flex;
@@ -248,7 +256,7 @@
   }
 
   .project_container {
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(1, 1fr) !important;
   }
   .project_container .project_one {
     margin-bottom: 50px;
@@ -313,6 +321,7 @@
   max-width: 400px;
   margin-bottom: 50px;
   background-color: #282a39;
+  display: none;
 }
 .projects .project_container .project_one .img {
   width: 100%;
@@ -359,6 +368,10 @@
   background: white;
   color: orange;
   font-weight: 500;
+}
+
+.show {
+  display: initial !important;
 }
 
 .contact .contact_container h1 {

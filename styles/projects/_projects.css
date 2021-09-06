@@ -45,6 +45,7 @@
   max-width: 400px;
   margin-bottom: 50px;
   background-color: #282a39;
+  display: none;
 }
 .projects .project_container .project_one .img {
   width: 100%;
@@ -91,4 +92,8 @@
   background: white;
   color: orange;
   font-weight: 500;
+}
+
+.show {
+  display: initial !important;
 }

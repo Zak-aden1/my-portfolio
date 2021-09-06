@@ -1,17 +1,24 @@
 "use strict";
 
 var tab = document.querySelectorAll('.tab');
+var project = document.querySelectorAll('.project_one');
 tab.forEach(function (button) {
   button.addEventListener('click', function (event) {
-    // document.querySelector('.tab.active')?.classList.remove('active');
-    // button.classList.add('active')
-    // console.log(event.currentTarget); // show what element was clicked in the console
-    // console.log(event.currentTarget.dataset); // get .dataset Object key from HTML element
-    // document.querySelector('.tab.active')?.classList.remove('active'); // optional chaining
-    button.classList.contains('active') ? button.classList.remove('active') : button.classList.add('active'); // event.currentTarget.classList.add('active')
+    // remove previous active class
+    var prevActive = document.querySelector('.active');
+    prevActive.classList.remove('active'); // add active class to selected button
 
-    document.querySelector('.project_one.show').classList.remove('show'); // button.classList.contains('active')? button.classList.remove('active'): button.classList.add('active')
+    button.classList.contains('active') ? button.classList.remove('active') : button.classList.add('active'); // remove previous shown projects
 
-    console.log(button);
+    var prevShow = document.querySelectorAll('.show');
+    prevShow.forEach(function (pro) {
+      pro.classList.remove('show');
+    }); // adding class to show selected project
+
+    var selectedContent = event.currentTarget.dataset.content;
+    var currentProjects = document.querySelectorAll(selectedContent);
+    currentProjects.forEach(function (pro) {
+      pro.classList.add('show');
+    });
   });
 });

@@ -159,21 +159,21 @@
         <div class="projects_buttons">
                 <ul>
                     <li>
-                        <button class="tab active" data-content="#one">Javascript</button>
+                        <button class="tab active" data-content=".projectJavascript">Javascript</button>
                     <!-- data-content="" >>> relates to event.currentTarget.dataset in JS -->
                     </li>
                     <li>
-                        <button class="tab" data-content="#two">React</button>
+                        <button class="tab" data-content=".projectReact">React</button>
                     </li>
                     <li>
-                        <button class="tab" data-content="#three">Full Stack</button>
+                        <button class="tab" data-content=".projectFullStack">Full Stack</button>
                     </li>
             </ul>
         </div>
 
         <div class="project_container ">
 
-        <div class="project_one show animate_animated">
+        <div class="project_one projectJavascript  show animate_animated">
                     <div class="img">
                         <img src="./images/calculator.jpg" alt="">
                     </div>
@@ -187,7 +187,7 @@
                         </div>
                     </div>
         </div>
-        <div class="project_one show animate_animated">
+        <div class="project_one projectJavascript show animate_animated">
                     <div class="img">
                         <img src="./images/tic-tac-toe.jpg" alt="">
                     </div>
@@ -202,7 +202,7 @@
                     </div>
         </div>
 
-        <div class="project_one show animate_animated">
+        <div class="project_one projectJavascript show animate_animated">
                     <div class="img">
                         <img src="./images/morse-code.jpg" alt="">
                     </div>
@@ -217,7 +217,7 @@
                     </div>
         </div>
 
-        <div class="project_one show animate_animated">
+        <div class="project_one projectReact  animate_animated">
                     <div class="img">
                         <img src="./images/word-hunt.jpg" alt="">
                     </div>
@@ -232,7 +232,7 @@
                     </div>
         </div>
 
-        <div class="project_one animate_animated">
+        <div class="project_one projectReact animate_animated">
                     <div class="img">
                         <img src="./images/punk-api.jpg" alt="">
                     </div>
@@ -247,7 +247,7 @@
                     </div>
         </div>
 
-        <div class="project_one animate_animated">
+        <div class="project_one projectReact animate_animated">
                     <div class="img">
                         <img src="./images/nologer.png" alt="">
                     </div>
@@ -262,7 +262,7 @@
                     </div>
         </div>
 
-        <div class="project_one animate_animated">
+        <div class="project_one projectFullStack animate_animated">
                     <div class="img">
                         <img src="./images/note.jpg" alt="">
                     </div>
@@ -288,13 +288,13 @@
 
         <form action="https://formspree.io/f/xzbykljr" method="post" id="contact_form">
             <label for="name"> Name</label>
-            <input type="text" class="input_field" name="name">
+            <input required type="text" class="input_field" name="name">
 
             <label for="email"> Email</label>
-            <input type="text" class="input_field" name="email">
+            <input required type="text" class="input_field" name="email">
 
             <label>Message</label>
-            <textarea name="message" class="input_field"></textarea>
+            <textarea required name="message" class="input_field"></textarea>
 
             <!-- <input id="submit_btn" type="submit" value="Send"> -->
             <button id="submit_btn">Submit</button>

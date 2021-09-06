@@ -1,25 +1,30 @@
 const tab = document.querySelectorAll('.tab')
+const project = document.querySelectorAll('.project_one')
 
 tab.forEach((button) => {
     
     button.addEventListener('click', (event) => {
-        
-        // document.querySelector('.tab.active')?.classList.remove('active');
 
-        // button.classList.add('active')
-        // console.log(event.currentTarget); // show what element was clicked in the console
-    // console.log(event.currentTarget.dataset); // get .dataset Object key from HTML element
+    // remove previous active class
+        const prevActive = document.querySelector('.active')
+        prevActive.classList.remove('active')
 
-    // document.querySelector('.tab.active')?.classList.remove('active'); // optional chaining
-
+        // add active class to selected button
         button.classList.contains('active') ? button.classList.remove('active'): button.classList.add('active')
 
-        // event.currentTarget.classList.add('active')
 
-        document.querySelector('.project_one.show').classList.remove('show');
-    
+        // remove previous shown projects
+        const prevShow = document.querySelectorAll('.show')
+        prevShow.forEach((pro) => {
+            pro.classList.remove('show')
+        })
 
-        // button.classList.contains('active')? button.classList.remove('active'): button.classList.add('active')
-        console.log(button);
+        // adding class to show selected project
+        const selectedContent = event.currentTarget.dataset.content;
+        const currentProjects = document.querySelectorAll(selectedContent);
+
+        currentProjects.forEach((pro) => {
+            pro.classList.add('show')
+        })
     } )
 })
