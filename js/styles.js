@@ -35,12 +35,12 @@ tab.forEach((button) => {
 const navbar = document.querySelector('header');
 const navItems = document.querySelectorAll('li');
 
-window.addEventListener('scroll', function () {
-    const scrollHeight = window.pageYOffset;
-    const navHeight = navbar.getBoundingClientRect().height;
-    if (scrollHeight > navHeight) {
-        navbar.classList.add('fixed-nav');
-    } else {
-        navbar.classList.remove('fixed-nav'); 
-    }
-});
+// window.addEventListener('scroll', function () {
+//     const scrollHeight = window.pageYOffset;
+//     const navHeight = navbar.getBoundingClientRect().height;
+//     if (scrollHeight > navHeight) {
+//         navbar.classList.add('fixed-nav');
+//     } else {
+//         navbar.classList.remove('fixed-nav'); 
+//     }
+// });

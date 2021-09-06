@@ -26,14 +26,12 @@ tab.forEach(function (button) {
 // DYNAMICALLY ADDING FIXED NAVBAR //
 
 var navbar = document.querySelector('header');
-var navItems = document.querySelectorAll('li');
-window.addEventListener('scroll', function () {
-  var scrollHeight = window.pageYOffset;
-  var navHeight = navbar.getBoundingClientRect().height;
-
-  if (scrollHeight > navHeight) {
-    navbar.classList.add('fixed-nav');
-  } else {
-    navbar.classList.remove('fixed-nav');
-  }
-});
+var navItems = document.querySelectorAll('li'); // window.addEventListener('scroll', function () {
+//     const scrollHeight = window.pageYOffset;
+//     const navHeight = navbar.getBoundingClientRect().height;
+//     if (scrollHeight > navHeight) {
+//         navbar.classList.add('fixed-nav');
+//     } else {
+//         navbar.classList.remove('fixed-nav'); 
+//     }
+// });
