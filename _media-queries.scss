@@ -1,5 +1,19 @@
 // Media Queries
 
+// MEDIA 1200px
+@media screen and (max-width: 1200px) {
+    
+    // projects
+    // Projects
+    .project_container {
+        grid-template-columns: repeat(2, 1fr) !important;
+
+        .project_one {
+            margin-bottom: 50px;
+        }
+    }
+}
+
 @media screen and (max-width: 940px) {
     // header
     .container {
@@ -54,12 +68,16 @@
     // Skills
     .tech {
         grid-template-columns: repeat(3, 1fr) !important;
+
+        div {
+            width: 80px;
+        }
     }
 
 
     // Projects
     .project_container {
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: repeat(1, 1fr) !important;
 
         .project_one {
             margin-bottom: 50px;
