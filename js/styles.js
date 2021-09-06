@@ -1,6 +1,7 @@
 const tab = document.querySelectorAll('.tab')
 const project = document.querySelectorAll('.project_one')
 
+// selecting projects
 tab.forEach((button) => {
     
     button.addEventListener('click', (event) => {
@@ -28,3 +29,18 @@ tab.forEach((button) => {
         })
     } )
 })
+
+// header fixed after scrolling 
+// DYNAMICALLY ADDING FIXED NAVBAR //
+const navbar = document.querySelector('header');
+const navItems = document.querySelectorAll('li');
+
+window.addEventListener('scroll', function () {
+    const scrollHeight = window.pageYOffset;
+    const navHeight = navbar.getBoundingClientRect().height;
+    if (scrollHeight > navHeight) {
+        navbar.classList.add('fixed-nav');
+    } else {
+        navbar.classList.remove('fixed-nav'); 
+    }
+});

@@ -1,7 +1,8 @@
 "use strict";
 
 var tab = document.querySelectorAll('.tab');
-var project = document.querySelectorAll('.project_one');
+var project = document.querySelectorAll('.project_one'); // selecting projects
+
 tab.forEach(function (button) {
   button.addEventListener('click', function (event) {
     // remove previous active class
@@ -21,4 +22,18 @@ tab.forEach(function (button) {
       pro.classList.add('show');
     });
   });
+}); // header fixed after scrolling 
+// DYNAMICALLY ADDING FIXED NAVBAR //
+
+var navbar = document.querySelector('header');
+var navItems = document.querySelectorAll('li');
+window.addEventListener('scroll', function () {
+  var scrollHeight = window.pageYOffset;
+  var navHeight = navbar.getBoundingClientRect().height;
+
+  if (scrollHeight > navHeight) {
+    navbar.classList.add('fixed-nav');
+  } else {
+    navbar.classList.remove('fixed-nav');
+  }
 });

@@ -80,6 +80,11 @@ header {
     button {
         @include button;
         z-index: 2;
+        transition: 0.3s;
+
+        &:hover {
+            transform: translate(0, -10px);
+        }
     }
 }
 
@@ -119,10 +124,13 @@ header {
             button {
                 @include button;
                 z-index: 3;
+                transition: 0.3s;
 
                 &::hover {
                     animation: swing;
                     animation-duration: 0.5s;
+
+                        transform: translate(0, -10px);
                 }
             }
         }
@@ -164,6 +172,16 @@ header {
     bottom: 0;
     z-index: -1;
     margin: 0;
+}
+
+
+// header fixed with js after scrolling 
+.fixed-nav {
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    width: 100%;
+    background-color: #242635;
 }
 
 // ipad

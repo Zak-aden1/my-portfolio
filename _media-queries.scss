@@ -2,8 +2,25 @@
 
 // MEDIA 1200px
 @media screen and (max-width: 1200px) {
+
+
+    // About Me
+    .intro_wrapper {
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-template-areas:
+            'top'
+            'left'
+            'right'
+             !important;
+    }
+    .right_column {
+        justify-content: center;
+    }
+
+    #dot_one {
+        background-color: red;
+    }
     
-    // projects
     // Projects
     .project_container {
         grid-template-columns: repeat(2, 1fr) !important;

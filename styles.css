@@ -117,20 +117,24 @@
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  transition: 0.3s;
 }
 .about_one .intro_wrapper .right_column button:hover {
   background-color: white;
   color: orange;
 }
+.about_one .intro_wrapper .right_column button:hover {
+  transform: translate(0, -10px);
+}
 .about_one .intro_wrapper .right_column #preview_shadow {
   background-color: #202436;
-  max-width: 500px;
+  width: 470px;
   height: 350px;
   padding-left: 30px;
   padding-top: 30px;
 }
 .about_one .intro_wrapper .right_column #preview {
-  max-width: 500px;
+  width: 500px;
   border: 2px solid darkblue;
   background-color: #282a39;
   opacity: 0.8;
@@ -217,6 +221,19 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .intro_wrapper {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-areas: "top" "left" "right" !important;
+  }
+
+  .right_column {
+    justify-content: center;
+  }
+
+  #dot_one {
+    background-color: red;
+  }
+
   .project_container {
     grid-template-columns: repeat(2, 1fr) !important;
   }
@@ -575,10 +592,14 @@ header button {
   cursor: pointer;
   transition: all 0.3s ease 0s;
   z-index: 2;
+  transition: 0.3s;
 }
 header button:hover {
   background-color: white;
   color: orange;
+}
+header button:hover {
+  transform: translate(0, -10px);
 }
 
 .main .container .row {
@@ -617,6 +638,7 @@ header button:hover {
   cursor: pointer;
   transition: all 0.3s ease 0s;
   z-index: 3;
+  transition: 0.3s;
 }
 .main .container .row button:hover {
   background-color: white;
@@ -625,6 +647,7 @@ header button:hover {
 .main .container .row button::hover {
   animation: swing;
   animation-duration: 0.5s;
+  transform: translate(0, -10px);
 }
 
 @keyframes typing {
@@ -654,4 +677,12 @@ header button:hover {
   bottom: 0;
   z-index: -1;
   margin: 0;
+}
+
+.fixed-nav {
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  width: 100%;
+  background-color: #242635;
 }

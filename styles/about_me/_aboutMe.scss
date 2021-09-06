@@ -136,18 +136,23 @@
 
             button {
                 @include button;
+                transition: 0.3s;
+
+                &:hover {
+                    transform: translate(0, -10px);
+                }
             }
 
             #preview_shadow {
                 background-color: #202436;
-                max-width: 500px;
+                width: 470px;
                 height: 350px;
                 padding-left: 30px;
                 padding-top: 30px;
             }
 
             #preview {
-                max-width: 500px;
+                width: 500px;
                 border: 2px solid darkblue;
                 background-color: #282a39;
                 opacity: 0.8;

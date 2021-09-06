@@ -116,20 +116,24 @@
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  transition: 0.3s;
 }
 .about_one .intro_wrapper .right_column button:hover {
   background-color: white;
   color: orange;
 }
+.about_one .intro_wrapper .right_column button:hover {
+  transform: translate(0, -10px);
+}
 .about_one .intro_wrapper .right_column #preview_shadow {
   background-color: #202436;
-  max-width: 500px;
+  width: 470px;
   height: 350px;
   padding-left: 30px;
   padding-top: 30px;
 }
 .about_one .intro_wrapper .right_column #preview {
-  max-width: 500px;
+  width: 500px;
   border: 2px solid darkblue;
   background-color: #282a39;
   opacity: 0.8;
