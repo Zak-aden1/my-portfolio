@@ -35,6 +35,11 @@
   color: orange;
   font-weight: 500;
 }
+.projects .projects_buttons ul li .active {
+  background: white;
+  color: orange;
+  font-weight: 500;
+}
 .projects .project_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -86,12 +91,6 @@
 }
 .projects .project_container.show {
   display: initial !important;
-}
-
-.active {
-  background: white;
-  color: orange;
-  font-weight: 500;
 }
 
 .show {

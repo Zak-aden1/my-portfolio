@@ -46,6 +46,11 @@
                     }
 
                 }
+                .active {
+                    background: white ;
+                    color: orange ;
+                    font-weight: 500;
+                }
             }
         }
     }
@@ -116,11 +121,11 @@
 }
 
 
-.active {
-        background: white;
-        color: orange;
-        font-weight: 500
-}
+// .active {
+//         background: white !important;
+//         color: orange !important;
+//         font-weight: 500 !important;
+// }
 
 .show  {
     display: initial !important;
