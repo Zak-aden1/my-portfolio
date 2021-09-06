@@ -19,10 +19,12 @@
   border-radius: 50%;
   margin: 0 8px;
   opacity: 0.75;
+  transition: 0.3s;
 }
 .footer .social a:hover {
   opacity: 1;
   color: orange;
+  transform: translate(0, -10px);
 }
 .footer .list {
   margin-top: 0;
@@ -41,11 +43,13 @@
   color: inherit;
   text-decoration: none;
   opacity: 0.8;
+  transition: 0.3s;
 }
 .footer .list li a:hover {
   opacity: 1;
   color: orange;
   cursor: pointer;
+  transform: translate(0, -10px);
 }
 .footer .list li a i {
   font-size: 40px;

@@ -109,10 +109,12 @@
                     border-radius: 50%;
                     margin: 10px 20px;
                     opacity: 0.75;
+                    transition: 0.3s;
 
                     &:hover {
                         color: orange;
                         cursor: pointer;
+                        transform: translate(0, -10px);
                     }
                 }
             }
