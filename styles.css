@@ -546,7 +546,8 @@ header {
   z-index: 1;
   width: 90%;
   z-index: 3;
-  margin: 10px auto;
+  margin: 0px auto;
+  transition: 1s linear;
 }
 header .header__h6 {
   flex-grow: 1;
@@ -677,4 +678,12 @@ header button:hover {
   bottom: 0;
   z-index: -1;
   margin: 0;
+}
+
+.fixed-nav {
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  width: 100%;
+  background-color: #242635;
 }

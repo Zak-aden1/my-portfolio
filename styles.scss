@@ -32,7 +32,8 @@ header {
     z-index: 1;
     width: 90%;
     z-index: 3;
-    margin: 10px auto;
+    margin: 0px auto;
+    transition: 1s linear;
     // justify-content: center;
 
     .header__h6 {
@@ -137,6 +138,7 @@ header {
     }
 }
 
+// typing Animation
 @keyframes typing {
     from {
         width: 0
@@ -176,13 +178,13 @@ header {
 
 
 // header fixed with js after scrolling 
-// .fixed-nav {
-//     position: fixed;
-//     margin-top: 0;
-//     top: 0;
-//     width: 100%;
-//     background-color: #242635;
-// }
+.fixed-nav {
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    width: 100%;
+    background-color: #242635;
+}
 
 // ipad
 // @media screen and (max-width: 1200px) and (min-width: 900px){
